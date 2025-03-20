@@ -1,11 +1,10 @@
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
-import getpass  # For secure password input
 
 # Taking credentials input from user
 sender_email = input("Enter your email: ")
-sender_password = getpass.getpass("Enter your email app password: ")  # Hidden input
+sender_password = input("Enter your email app password: ")
 receiver_email = input("Enter recipient's email: ")
 
 # Email setup
